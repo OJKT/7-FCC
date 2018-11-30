@@ -1,12 +1,161 @@
 # 7-FCC
-Lesson Notes of OJKT
-<div id="page-wrapper">
 <link href="https://fonts.googleapis.com/css?family=Khand:500" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 # FCC-6-Responsive Web Design Challenges
 Responsive Web Design Challenges Lesson Notes of OJKT
 <!DOCTYPE: html>
 <html>	
+Lesson Notes of OJKT
+<div id="page-wrapper">
+<style>
+		body, html {
+  font-family: "Khand", sans-serif;
+  background: lightgrey;
+}
+
+/*toolbar&title*/
+#title {
+	position: static;
+	top: 0;
+	right: 0;
+	padding-left: 15vh;
+	padding-right: 15vh;
+	padding-bottom: 5vh;
+	padding-top: 4vh;
+  margin-top: 5px;
+	margin-left: 1vw;
+	margin-right: 0.3vw;
+	color: black;
+	background: repeating-linear-gradient(180deg, black 0px, cyan 40px, black 80px);
+  font-size: 4vm;
+	font-size: 5vh;
+  font-family: font-family: 'Lobster Two', cursive;
+	text-align: center;
+	text-transform: uppercase;
+}	
+/*toolbar&title*/
+
+/*footer*/
+footer {
+	position: static;
+	bottom: 0;
+	right: 0;
+  margin-top: 10px;
+	margin-left: 0px;
+	padding-left: 10px;
+	margin-right: 1px;
+  background-color: #C0C0C0;
+	border: 4px solid #000;
+ 	border-radius: 4px;
+	color: darkgrey;
+	font-size: 2vm;
+	font-size: 2vh;
+}
+span {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #eee;
+}
+/*footer*/
+
+/*navlinks*/
+  ul {
+	position: fixed;
+	Padding-top: 0vh;
+	margin-top: 1vh;
+	margin-left: 90vw;
+	font-family: font-family: 'Lobster Two', cursive;
+	text-transform: none;
+	font-size: 3vm;
+	font-size: 3vh;
+		background-color: white;
+		transform: rotate(-45deg);
+		border: solid black 1vh;
+		border-radius: 4vh;
+}
+#nav-link {
+			padding-left: 0px;
+			padding-right: 5px;
+			color: red;
+			font-size: 3vh;
+    }
+/*navlinks*/
+/*grid*/
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;}
+  
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+  }
+/*grid*/
+
+/*media query*/
+  .block1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+  
+  .block2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+  
+  .block3 {
+    background: PaleTurquoise;
+    grid-area: content;
+  }
+  
+  .block4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+  
+  .container2 {
+    font-size: 1.5em;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header"
+      "advert"
+      "content"
+      "footer";
+  }
+  
+  @media (min-width: 300px){
+    .container2{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "advert header"
+        "advert content"
+        "advert footer";
+    }
+  }
+  
+ @media (min-width: 400px){
+    .container2{
+      grid-template-areas:
+        "header header"
+        "advert content"
+        "footer footer";
+    }
+  }
+/*media query*/
+</style>
+
 <header id="header"></header>
 <head class="head">
 		<h1 id=title><u>Introduction to the CSS Grid Challenges</u></h1>
